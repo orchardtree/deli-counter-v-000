@@ -21,6 +21,6 @@ def now_serving(katz_deli)
   if katz_deli.size == 0
     puts "There is nobody waiting to be served!"
   elsif katz_deli.size > 0 
-    katz_deli.unshift
+    customer_being_served = katz_deli.shift
   end
 end
